@@ -29,29 +29,33 @@ Downsampling from 48 kHz to 44.1 kHz.
 
 ### Best by speed (loading + resampling)
 
-<!--  L: load, R: resample libs
-L: torchaudio_sox_io- \nR: torchaudio_hann                 27.543033
-L: torchaudio_soundfile- \nR: torchaudio_kaiser            27.635533
-L: torchaudio_soundfile- \nR: torchaudio_hann              27.661973
-L: torchaudio_soundfile- \nR: torchaudio_transform_hann    27.752087
-L: scipy- \nR: soxr                                        28.039192
-L: torchaudio_soundfile- \nR: julius                       38.328746
-L: torchaudio_soundfile- \nR: soxr                         38.694766
-L: librosa- \nR: soxr                                      39.542175
-L: soundfile- \nR: soxr                                    41.360285 -->
+<!--  load, R: resample libs
+L: torchaudio_soundfile- \nR: torchaudio_transform_hann    26.424762
+L: torchaudio_soundfile- \nR: torchaudio_hann              27.050398
+L: torchaudio_sox_io- \nR: torchaudio_hann                 27.127326
+L: torchaudio_soundfile- \nR: torchaudio_kaiser            27.153835
+L: torchaudio_sox_io- \nR: torchaudio_kaiser               27.646094
+L: scipy- \nR: soxr                                        28.060912
+L: torchaudio_sox_io- \nR: soxr                            37.961860
+L: torchaudio_soundfile- \nR: soxr                         37.999496
+L: torchaudio_soundfile- \nR: julius                       39.168839
+L: librosa- \nR: soxr                                      39.238550
+L: soundfile- \nR: soxr                                    42.834313-->
 
 
 | Load Library | Resampling Library | Time on CPU |
 | - | - | - |
-| `torchaudio-sox_io` | `torchaudio_hann` | 27.54 ms |
-| `torchaudio-soundfile` | `torchaudio_kaiser` | 27.64 ms |
-| `torchaudio-soundfile` | `torchaudio_hann` | 27.66 ms |
-| `torchaudio-soundfile` | `torchaudio_transform_hann` | 27.75 ms |
-| `scipy` | `soxr` | 28.04 ms |
-| `torchaudio-soundfile` | `julius` | 38.33 ms |
-| `torchaudio-soundfile` | `soxr` | 38.69 ms |
-| `librosa` | `soxr` | 39.54 ms |
-| `soundfile` | `soxr` | 41.36 ms |
+| `torchaudio-sox_io` | `torchaudio_hann` | 26.42 ms |
+| `torchaudio-soundfile` | `torchaudio_hann` | 27.05 ms |
+| `torchaudio-sox_io` | `torchaudio_kaiser` | 27.65 ms |
+| `torchaudio-soundfile` | `torchaudio_kaiser` | 27.15 ms |
+| `scipy` | `soxr` | 28.06 ms |
+| `torchaudio-sox_io` | `soxr` | 37.96 ms |
+| `torchaudio-soundfile` | `soxr` | 38.00 ms |
+| `torchaudio-soundfile` | `julius` | 39.17 ms |
+| `librosa` | `soxr` | 39.24 ms |
+| `soundfile` | `soxr` | 42.83 ms |
+
 
 
 
