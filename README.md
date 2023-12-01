@@ -2,8 +2,8 @@ Comparison of audio resampling libraries and some audio loaders.
 
 View the two notebooks:
 
-- [Audio Resampling in Python.ipynb](Audio Resampling in Python.ipynb)
-- [Audio Loading + Resampling.ipynb](Audio Loading + Resampling.ipynb)
+- [Audio Resampling in Python.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Resampling%20in%20Python.ipynb)
+- [Audio Loading + Resampling.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Loading%20%2B%20Resampling.ipynb)
 
 ### Best by quality
 
