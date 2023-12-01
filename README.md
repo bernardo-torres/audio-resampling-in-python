@@ -40,8 +40,9 @@ L: torchaudio_soundfile- \nR: soxr                         38.694766
 L: librosa- \nR: soxr                                      39.542175
 L: soundfile- \nR: soxr                                    41.360285 -->
 
+
 | Load Library | Resampling Library | Time on CPU |
-| - | - |
+| - | - | - |
 | `torchaudio-sox_io` | `torchaudio_hann` | 27.54 ms |
 | `torchaudio-soundfile` | `torchaudio_kaiser` | 27.64 ms |
 | `torchaudio-soundfile` | `torchaudio_hann` | 27.66 ms |
