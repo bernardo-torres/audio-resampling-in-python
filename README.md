@@ -55,6 +55,7 @@ L: librosa- \nR: soxr                            47.683907 -->
 ### Best by quality (resampling only)
 
 * according to the original notebook [Audio-resampling-in-python]
+(https://github.com/bernardo-torres/audio-resampling-in-python)
 
 1. Good:
    - `scikit.samplerate`/`scikits-samplerate`/`samplerate`/`libsamplerate`
@@ -68,6 +69,5 @@ L: librosa- \nR: soxr                            47.683907 -->
 5. Bad:
    - `scipy.signal.resample`
 
-
-(https://github.com/bernardo-torres/audio-resampling-in-python). Please check plots in the [Audio Resampling in Python.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Resampling%20in%20Python.ipynb) notebook. This version is an updated version of the original notebook but does not have all the libraries tested in the original notebook.
+Please check plots in the [Audio Resampling in Python.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Resampling%20in%20Python.ipynb) notebook. This version is an updated version of the original notebook but does not have all the libraries tested in the original notebook.
 
