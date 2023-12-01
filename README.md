@@ -54,8 +54,7 @@ L: librosa- \nR: soxr                            47.683907 -->
 
 ### Best by quality (resampling only)
 
-* according to the original notebook [Audio-resampling-in-python]
-(https://github.com/bernardo-torres/audio-resampling-in-python)
+* according to the original notebook [Audio-resampling-in-python](https://github.com/bernardo-torres/audio-resampling-in-python)
 
 1. Good:
    - `scikit.samplerate`/`scikits-samplerate`/`samplerate`/`libsamplerate`
