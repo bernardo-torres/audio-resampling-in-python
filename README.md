@@ -2,25 +2,8 @@ Comparison of audio resampling libraries and some audio loaders.
 
 View the two notebooks:
 
-- [Audio Resampling in Python.ipynb](Audio Resampling in Python.ipynb)
-- [Audio Loading + Resampling.ipynb](Audio Loading + Resampling.ipynb)
-
-### Best by quality
-
-1. Good:
-   - `scikit.samplerate`/`scikits-samplerate`/`samplerate`/`libsamplerate`
-   - `librosa`/`resampy` (`"kaiser_best"`)
-   - `julius`
-3. Acceptable:
-   - `nnresample`
-   - `lilfilter`
-   - `torchaudio` (`transforms.Resample` + `resample_waveform`)
-   - `librosa`/`resampy` (`"kaiser_fast"`)
-5. Bad:
-   - `scipy.signal.resample`
-
-
-According to [Audio-resampling-in-python](https://github.com/bernardo-torres/audio-resampling-in-python). Please check plots in the [Audio Resampling in Python.ipynb](Audio Resampling in Python.ipynb) notebook. This version is an updated version of the original notebook but does not have all the libraries tested in the original notebook.
+- [Audio Resampling in Python.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Resampling%20in%20Python.ipynb)
+- [Audio Loading + Resampling.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Loading%20%2B%20Resampling.ipynb)
 
 
 ### Best by speed (resampling only)
@@ -67,4 +50,24 @@ L: librosa- \nR: soxr                            47.683907 -->
 | `torchaudio`/`julius` | 39.99 ms |
 | `soundfile`/`soxr` | 42.51 ms |
 | `librosa`/`soxr` | 47.68 ms |
+
+
+### Best by quality (resampling only)
+
+* according to the original notebook [Audio-resampling-in-python]
+
+1. Good:
+   - `scikit.samplerate`/`scikits-samplerate`/`samplerate`/`libsamplerate`
+   - `librosa`/`resampy` (`"kaiser_best"`)
+   - `julius`
+3. Acceptable:
+   - `nnresample`
+   - `lilfilter`
+   - `torchaudio` (`transforms.Resample` + `resample_waveform`)
+   - `librosa`/`resampy` (`"kaiser_fast"`)
+5. Bad:
+   - `scipy.signal.resample`
+
+
+(https://github.com/bernardo-torres/audio-resampling-in-python). Please check plots in the [Audio Resampling in Python.ipynb](https://github.com/bernardo-torres/audio-resampling-in-python/blob/master/Audio%20Resampling%20in%20Python.ipynb) notebook. This version is an updated version of the original notebook but does not have all the libraries tested in the original notebook.
 
